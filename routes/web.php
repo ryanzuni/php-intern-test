@@ -17,9 +17,5 @@ Route::get('/employee-form', function () {
     return view('employee-form');
 });
 
-
 Route::post('/employees', [App\Http\Controllers\EmployeeController::class, 'store'])
     ->name('employees.store');
-Route::get('/', function () {
-    return view('welcome');
-});
