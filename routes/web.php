@@ -12,10 +12,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/employee-form', function () {
+    Route::get('/employee-form', function () {
     return view('employee-form');
 });
 
-Route::post('/employees', [App\Http\Controllers\EmployeeController::class, 'store'])
-    ->name('employees.store');
+Route::get('/employees', [App\Http\Controllers\EmployeeController::class, 'index'])->name('employees.index');
+Route::post('/employees', [App\Http\Controllers\EmployeeController::class, 'store'])->name('employees.store');
