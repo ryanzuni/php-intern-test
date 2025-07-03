@@ -43,3 +43,8 @@ php artisan migrate
 php artisan serve
 php artisan serve/employee-form
 php artisan serve/employee-list
+
+---
+
+1. **Install Predis (Redis PHP Client)** 
+composer require predis/predis
